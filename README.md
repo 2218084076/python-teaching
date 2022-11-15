@@ -2,7 +2,7 @@
 
 This is a python learning route teaching project
 
-## [python基础数据类型](python基础数据类型/python基本数据类型.md)
+## [python基础数据类型](python_basic_data_type/docs.md)
 
 ```text
 解释介绍python中的基本数据类型的使用转换等

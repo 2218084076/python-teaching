@@ -133,5 +133,3 @@ cython_debug/
 ### Customs
 
 .idea
-**/settings.local.yml
-**/demo.py

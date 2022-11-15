@@ -22,13 +22,15 @@
 两个字符串示例
 
 ```python
-var1 = 'Hello World!'
-var2 = "Run"
+"""字符串变量"""
+v1 = 'Hello World!'
+v2 = "Run"
 ```
 
 ### 字符串拼接
 
 ```python
+"""字符串拼接"""
 # 使用加号连接
 test = 'abc' + 'b'
 
@@ -55,10 +57,11 @@ str_3 = '|'.join(test_list)
 列表索引从 0 开始，第二个索引是 1，依此类推。
 
 ```python
-list = ['red', 'green', 'blue', 'yellow', 'white', 'black']
-print(list[0])
-print(list[1])
-print(list[2])
+"""list取值"""
+_list = ['red', 'green', 'blue', 'yellow', 'white', 'black']
+print(_list[0])
+print(_list[1])
+print(_list[2])
 # 返回值依次是
 '''
 red
@@ -72,10 +75,11 @@ blue
 索引也可以从尾部开始，最后一个元素的索引为 -1，往前一位为 -2，以此类推。
 
 ```python
-list = ['red', 'green', 'blue', 'yellow', 'white', 'black']
-print(list[-1])
-print(list[-2])
-print(list[-3])
+"""list取值"""
+_list = ['red', 'green', 'blue', 'yellow', 'white', 'black']
+print(_list[-1])
+print(_list[-2])
+print(_list[-3])
 # 返回值一次是
 # black
 # white
@@ -87,9 +91,22 @@ print(list[-3])
 也可以使用方括号 [] 的形式截取字符，如下所示：
 
 ```python
+"""list取值"""
 nums = [10, 20, 30, 40, 50, 60, 70, 80, 90]
 print(nums[0:4])
 # 返回值 [10, 20, 30, 40]
+```
+
+- append 方法用于在列表的最后追加一个新元素，其使用形式为
+
+列表名称.`append`(新元素)
+
+```python
+"""已知斐波那契数列的前两个数据为 0 和 1，计算其前 10 项"""
+# 斐波那契数列:[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+fib_list = [0, 1]
+for i in range(2, 10):
+    fib_list.append(fib_list[-1] + fib_list[-2])
 ```
 
 ![img.png](../data/img2.png)
@@ -100,6 +117,7 @@ print(nums[0:4])
 > 每个对之间用逗号(,)分割，整个字典包括在花括号 {} 中 ,格式如下所示：
 
 ```python
+"""字典定义"""
 d = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
 ```
 
@@ -112,7 +130,28 @@ d = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
 > 集合（set）是一个无序的不重复元素列表
 
 ```python
-list = [1, 2, 3, 3, 3, 4]
-print(set(list))
+"""类型转换"""
+_list = [1, 2, 3, 3, 3, 4]
+print(set(_list))
 # 返回值= {1, 2, 3, 4}
 ```
+
+## 练习
+
+- 练习1
+
+```python
+"""已知一个列表中有某些元素重复，编程去掉重复元素，形成一个新列表"""
+messy_list = [1, 2, 2, 3, 3, 4, 4, 5, 6, 10, 9, 6]
+new_list = []
+for i in messy_list:
+    if i not in new_list:
+        new_list.append(i)
+# 对其进行升序和降序
+new_list.sort()  # or new_list.sort(reverse=False)
+print('升序后为', new_list)
+new_list.sort(reverse=True)
+print('降序后为', new_list)
+```
+
+
