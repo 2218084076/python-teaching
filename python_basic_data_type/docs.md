@@ -17,7 +17,6 @@
 ### 整数型（int）
 
 > 通常被称为是整型或整数，是正或负整数，不带小数点
->
 > 其中1和0也可以代表 [bool](https://docs.python.org/zh-cn/3/library/functions.html?highlight=bool#bool)
 > 类型中的True和False
 
@@ -197,3 +196,4 @@ poetry_content_list=["轻轻的我走了，正如我轻轻的来；我轻轻的�
 with open('Goodbye.txt','w',encoding='utf-8',newline='')as f:
     f.writelines('\n'.join(poetry_content_list))
 ```
+

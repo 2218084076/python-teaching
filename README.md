@@ -21,4 +21,3 @@ This is a python learning route teaching project
 抓取一个静态网页
 加深python基础的运用，并初识web页面解析文件存储等实现。
 通过功能实现，完善技术栈
-```
