@@ -29,3 +29,9 @@ This is a python learning route teaching project
 通过两个静态网站的抓取示例，加深python基础的运用，并初识web页面解析文件存储等实现，
 通过功能实现，完善技术栈
 ```
+
+### [request教学](cralwers/requests_cralwers.md)
+
+### [selenium教学](cralwers/selenium_cralwers.md)
+
+### [爬虫框架scrapy](cralwers/scrapy_cralwers.md)
