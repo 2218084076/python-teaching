@@ -134,3 +134,4 @@ cython_debug/
 
 .idea
 /cralwers/*.csv
+/download/

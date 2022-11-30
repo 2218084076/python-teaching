@@ -1,4 +1,46 @@
-# selenium爬虫教学
+- [selenium是什么?](#selenium%E6%98%AF%E4%BB%80%E4%B9%88)
+- [适用场景](#%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF)
+- [Selenium 的缺点：](#selenium-%E7%9A%84%E7%BC%BA%E7%82%B9)
+- [selenium 安装与使用](#selenium-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8)
+- [使用selenium爬虫练习](#%E4%BD%BF%E7%94%A8selenium%E7%88%AC%E8%99%AB%E7%BB%83%E4%B9%A0)
+- [爬虫过程指导](#%E7%88%AC%E8%99%AB%E8%BF%87%E7%A8%8B%E6%8C%87%E5%AF%BC)
+    - [使用浏览器解析网页结构](#%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E8%A7%A3%E6%9E%90%E7%BD%91%E9%A1%B5%E7%BB%93%E6%9E%84)
+
+---
+
+# [selenium](https://www.selenium.dev/zh-cn/documentation/)
+
+## selenium是什么?
+
+web自动化工具
+
+---
+
+> Selenium是一个基于浏览器的自动化工具，它提供了一种跨平台、跨浏览器的端到端的web自动化解决方案。
+> Selenium主要包括三部分：
+>
+> - Selenium IDE： Firefox浏览器的一个插件（扩展），它可以进行录制回放，
+    > 并且可以把录制的操作以多种语言（如JAVA、Python、C#等）的形式导出成测试用例。
+> - Selenium WebDriver： 提供Web自动化所需的API，主要用作浏览器控制、页面元素选择和调试。
+    > 不同的浏览器需要不同的WebDriver。
+> - Selenium Grid： 提供了在不同机器的不同浏览器上运行selenium测试的能力。
+
+这里的框架主要使用Python结合Selenium WebDriver库进行搭建的。通常，
+一个典型的自动化测试框架一般包括用例管理模板、自动化执行控制器、报表生成模块、日志模块和邮件发送模块等。
+
+## 适用场景
+
+在爬虫场景中，可大致分为两中，一种是直接想其发起`HTTP`就可以请求出数据，我们称其为静态网站，
+这种网站可以选用`requests`、`httpx`等请求库结合页面解析库来实现静态抓取；
+另外是不能通过单纯访问获得的，比如在请求网站是，需要js加载、浏览器模式识别等，这时，
+通过`selenium`才可以爬取执行 `js` 后的网页数据，实现“所见即所得”。正因如此，要等网页加载完`selenium`才能爬取成功,否则也无法爬出数据
+
+## Selenium 的缺点:
+
+- 速度慢，每次运行爬虫都打开一个浏览器，如果没有设置，还会加载图片、JS等等一大堆东西。
+- 占用资源太多。
+- 对网络的要求会更高。 Selenium 加载了很多可能对您没有价值的补充文件（如css，js和图像文件）。
+  与仅仅请求您真正需要的资源（使用单独的HTTP请求）相比，这可能会产生更多的流量。
 
 ## [selenium](https://www.selenium.dev/) 安装与使用
 
@@ -107,6 +149,8 @@ from typing import List
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+
+
 # 导入所需依赖
 
 def init_browser(
@@ -133,7 +177,7 @@ def init_browser(
     return _browser
 
 
-def parse_page(_browser) -> dict:
+def parse_page(_browser) -> List[dict]:
     """
     parse page
     
@@ -189,6 +233,7 @@ def write_to_file(info: List[dict]):
         dict_writer = csv.DictWriter(file, keys)
         dict_writer.writeheader()
         dict_writer.writerows(info)
+
 
 # 使用main方法来执行以上程序
 if __name__ == '__main__':

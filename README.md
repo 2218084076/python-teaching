@@ -5,6 +5,18 @@
 
 This is a python learning route teaching project
 
+---
+
+- [python基础数据类型](#python%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
+- [python条件循环语句](#python%E6%9D%A1%E4%BB%B6%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5)
+- [def函数使用](#def%E5%87%BD%E6%95%B0%E4%BD%BF%E7%94%A8)
+- [爬虫教学](#%E7%88%AC%E8%99%AB%E6%95%99%E5%AD%A6)
+    - [request教学](#request%E6%95%99%E5%AD%A6)
+    - [selenium教学](#selenium%E6%95%99%E5%AD%A6)
+    - [爬虫框架scrapy](#%E7%88%AC%E8%99%AB%E6%A1%86%E6%9E%B6scrapy)
+
+---
+
 ## [python基础数据类型](basic_knowledge/基本数据类型.md)
 
 ```text
@@ -34,4 +46,9 @@ This is a python learning route teaching project
 
 ### [selenium教学](cralwers/selenium_cralwers.md)
 
+浏览器自动化工具，适用于访问目标网站需要js加载时。同样的产品还有 [playwright](https://playwright.dev/)
+
 ### [爬虫框架scrapy](cralwers/scrapy_cralwers.md)
+
+Scrapy 是一个为了爬取网站数据，提取结构性数据而编写的应用框架，我们只需要实现少量的代码，
+就能够快速的抓取。 Scrapy 使用了 Twisted 异步网络框架，可加快我们的下载速度。
