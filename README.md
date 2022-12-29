@@ -11,9 +11,9 @@ This is a python learning route teaching project
 - [python条件循环语句](#python%E6%9D%A1%E4%BB%B6%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5)
 - [def函数使用](#def%E5%87%BD%E6%95%B0%E4%BD%BF%E7%94%A8)
 - [爬虫教学](#%E7%88%AC%E8%99%AB%E6%95%99%E5%AD%A6)
-    - [request教学](#request%E6%95%99%E5%AD%A6)
-    - [selenium教学](#selenium%E6%95%99%E5%AD%A6)
-    - [爬虫框架scrapy](#%E7%88%AC%E8%99%AB%E6%A1%86%E6%9E%B6scrapy)
+  - [request教学](#request%E6%95%99%E5%AD%A6)
+  - [selenium教学](#selenium%E6%95%99%E5%AD%A6)
+  - [爬虫框架scrapy](#%E7%88%AC%E8%99%AB%E6%A1%86%E6%9E%B6scrapy)
 
 ---
 
