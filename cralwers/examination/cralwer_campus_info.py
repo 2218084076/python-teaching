@@ -19,13 +19,13 @@ start_urls = [
     'https://jxjy.imu.edu.cn/tzgg/2.htm',
     'https://jxjy.imu.edu.cn/tzgg/3.htm'
 ]
-TABLE_NAME = 'zzy21200578'
+TABLE_NAME = 'test'
 
 connection = pymysql.connect(
     host='localhost',
     user='root',
     password='123qweasd',
-    database='qmks',
+    database='test',
     cursorclass=pymysql.cursors.DictCursor
 )
 
