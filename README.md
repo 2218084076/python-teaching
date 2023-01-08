@@ -18,40 +18,47 @@ This is a python learning route teaching project
 
 ---
 
-## [python基础数据类型](https://github.com/2218084076/python-teaching/tree/develop/basic_knowledge/基本数据类型.md)
+## [python基础数据类型](basic_knowledge/基本数据类型.md)
 
 ```text
 解释介绍python中的基本数据类型的使用转换等
 ```
 
-## [python条件循环语句](https://github.com/2218084076/python-teaching/tree/develop/basic_knowledge/条件循环语句.md)
+## [python条件循环语句](basic_knowledge/条件循环语句.md)
 
 ```text
 介绍python语言中条件和循环的语法
 ```
 
-## [def函数使用](https://github.com/2218084076/python-teaching/tree/develop/basic_knowledge/def函数教学.md)
+## [def函数使用](basic_knowledge/def函数教学.md)
 
 ```text
 函数是组织好的，可重复使用的，用来实现单一，或相关联功能的代码段。
 ```
 
-## [爬虫教学](https://github.com/2218084076/python-teaching/blob/develop/cralwers/爬虫教学.md)
+## [爬虫教学](cralwers/爬虫教学.md)
 
 ```text
 通过两个静态网站的抓取示例，加深python基础的运用，并初识web页面解析文件存储等实现，
 通过功能实现，完善技术栈
 ```
 
-### [request教学](https://github.com/2218084076/python-teaching/blob/develop/cralwers/requests_cralwers.md)
+### [request教学](cralwers/requests_cralwers.md)
 
-`requests`是 `python` 中的内置模块，该模块主要用来发送 `HTTP` 请求，每次调用 `requests` 请求之后，会返回一个 `response` 对象，该对象包含了具体的响应信息。
-
-### [selenium教学](https://github.com/2218084076/python-teaching/blob/develop/cralwers/selenium_cralwers.md)
+### [selenium教学](cralwers/selenium_cralwers.md)
 
 浏览器自动化工具，适用于访问目标网站需要js加载时。同样的产品还有 [playwright](https://playwright.dev/)
 
-### [爬虫框架scrapy](https://github.com/2218084076/python-teaching/blob/develop/cralwers/scrapy_cralwers.md)
+### [爬虫框架scrapy](cralwers/scrapy_cralwers.md)
+
+Scrapy 是一个为了爬取网站数据，提取结构性数据而编写的应用框架，我们只需要实现少量的代码，
+就能够快速的抓取。 Scrapy 使用了 Twisted 异步网络框架，可加快我们的下载速度。
+
+`requests`是 `python` 中的内置模块，该模块主要用来发送 `HTTP` 请求，每次调用 `requests` 请求之后，会返回一个 `response` 对象，该对象包含了具体的响应信息。
+
+
+浏览器自动化工具，适用于访问目标网站需要js加载时。同样的产品还有 [playwright](https://playwright.dev/)
+
 
 `Scrapy` 是一个为了爬取网站数据，提取结构性数据而编写的应用框架，我们只需要实现少量的代码，
 就能够快速的抓取。 `Scrapy` 使用了 `Twisted` 异步网络框架，可加快我们的下载速度。
