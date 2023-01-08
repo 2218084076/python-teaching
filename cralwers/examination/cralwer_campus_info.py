@@ -1,5 +1,10 @@
-"""cralwer campus information"""
 # -*- coding: UTF-8 -*-
+"""
+cralwer campus information
+
+本示例实现抓取某大学公告板块的新闻内容及标题，时间等字段，
+并将其通过简单的mysql链接工具写入mysql数据库中
+"""
 import re
 import time
 from datetime import datetime

@@ -2,6 +2,7 @@
 
 [![github](https://img.shields.io/badge/github-Terry-brightgreen.svg?style=social)](https://github.com/2218084076)
 [![python](https://img.shields.io/badge/language-python-green.svg)](https://www.python.org/)
+:rainbow_flag:
 
 This is a python learning route teaching project
 

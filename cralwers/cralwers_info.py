@@ -1,4 +1,7 @@
-"""company"""
+"""
+本示例演示解析抓取顺企网一个页面的企业信息列表
+并将其导出到本地csv文件中
+"""
 import csv
 import datetime
 import time
@@ -43,8 +46,9 @@ def parse_page(_browser) -> List[dict]:
     :return:
     """
     info_list = []
-    company_info_list = _browser.find_elements(By.CLASS_NAME, 'f_l')  # get 所有 class name 为f_l的元素
-    num = 1
+    company_info_list = _browser.find_elements(
+        By.CLASS_NAME, 'f_l')  # get 所有 class name 为f_l的元素
+    num: int = 1
     for i in company_info_list:
         _company_info = {
             'title': i.find_element(By.TAG_NAME, 'h4').text,
@@ -68,7 +72,8 @@ def parse_page(_browser) -> List[dict]:
             _company_info.update(
                 {'link': i.find_element(By.CLASS_NAME, 'shop').get_attribute('href')})
             # get_attribute获取标签属性值
-        except Exception:
+        except Exception as e:
+            print(e)
             info_list.append(_company_info)
         num += 1
     print(info_list)
