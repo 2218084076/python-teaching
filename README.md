@@ -53,3 +53,12 @@ This is a python learning route teaching project
 
 Scrapy 是一个为了爬取网站数据，提取结构性数据而编写的应用框架，我们只需要实现少量的代码，
 就能够快速的抓取。 Scrapy 使用了 Twisted 异步网络框架，可加快我们的下载速度。
+
+`requests`是 `python` 中的内置模块，该模块主要用来发送 `HTTP` 请求，每次调用 `requests` 请求之后，会返回一个 `response` 对象，该对象包含了具体的响应信息。
+
+
+浏览器自动化工具，适用于访问目标网站需要js加载时。同样的产品还有 [playwright](https://playwright.dev/)
+
+
+`Scrapy` 是一个为了爬取网站数据，提取结构性数据而编写的应用框架，我们只需要实现少量的代码，
+就能够快速的抓取。 `Scrapy` 使用了 `Twisted` 异步网络框架，可加快我们的下载速度。
