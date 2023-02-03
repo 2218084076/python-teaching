@@ -48,7 +48,7 @@ web自动化工具
 
 `cmd` 命令行下 用 `pip install selenium` 安装
 （若是anaconda环境则可以直接进入anaconda)
-![img.png](../data/cralwer_img1.png)
+![img.png](cralwer_img1.png)
 
 - 2、安装selenium对应的浏览器驱动
 

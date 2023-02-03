@@ -1,40 +1,13 @@
 """
+author：linbo.wang
+language: python
+
 本示例演示解析抓取顺企网一个页面的企业信息列表
 并将其导出到本地csv文件中
 """
-import csv
-import datetime
-import time
-from pathlib import Path
 from typing import List
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-
-
-def init_browser(
-        target_url: str = 'https://www.11467.com/shenzhen/dir/i67.htm',
-        headless: bool = True
-):
-    """
-    init browser
-
-    初始化浏览器对象，通过参数控制浏览器的有头无头模式
-
-    :param headless:
-    :param target_url:
-    :return:
-    """
-    if headless:
-        _chrome_options = Options()
-        _chrome_options.add_argument('--headless')
-        _browser = webdriver.Chrome(chrome_options=_chrome_options)
-    else:
-        _browser = webdriver.Chrome()
-    time.sleep(3)
-    _browser.get(target_url)
-    return _browser
 
 
 def parse_page(_browser) -> List[dict]:
@@ -79,17 +52,3 @@ def parse_page(_browser) -> List[dict]:
     print(info_list)
     _browser.quite()
     return info_list
-
-
-def write_to_file(info: List[dict], file_name: str):
-    """
-    write to file
-    """
-    keys = info[0].keys()
-    with open(
-            Path(f'{file_name}-{datetime.datetime.now().date()}.csv'),
-            'w', newline='', encoding='utf-8'
-    ) as file:
-        dict_writer = csv.DictWriter(file, keys)
-        dict_writer.writeheader()
-        dict_writer.writerows(info)

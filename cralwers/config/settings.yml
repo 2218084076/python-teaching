@@ -1,0 +1,23 @@
+#  http://bn59.s2ps.cn/webroot/decision/
+cralwers_medical_headers: { Accept: 'text/html, */*; q=0.01',
+                            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYW5ydWFuIiwiaWF0IjoxNjc1MzE2MDQwLCJleHAiOjE2NzY1MjU2NDAsInN1YiI6Ils1OTJhXVs2NzgxXVs5NmM2XVs1NmUyXVs5MWNkXVs1ZTg2XVs2ZGFhXVs5Njc1XVs1MjM2XVs4MzZmXVs1MzgyXVs2NzA5XVs5NjUwXVs1MTZjXVs1M2Y4XSIsImRlc2NyaXB0aW9uIjoiWzU5MmFdWzY3ODFdWzk2YzZdWzU2ZTJdWzkxY2RdWzVlODZdWzZkYWFdWzk2NzVdWzUyMzZdWzgzNmZdWzUzODJdWzY3MDldWzk2NTBdWzUxNmNdWzUzZjhdKFs1OTJhXVs2NzgxXVs5NmM2XVs1NmUyXVs5MWNkXVs1ZTg2XVs2ZGFhXVs5Njc1XVs1MjM2XVs4MzZmXVs1MzgyXVs2NzA5XVs5NjUwXVs1MTZjXVs1M2Y4XSkiLCJqdGkiOiJqd3QifQ.JB3sI1gNENcVrju1WmGPWSNalpgD2yI4tECVyWAqmMQ',
+                            Cookie: 'fine_remember_login=-2; fine_auth_token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYW5ydWFuIiwiaWF0IjoxNjc1MzE2MDQwLCJleHAiOjE2NzY1MjU2NDAsInN1YiI6Ils1OTJhXVs2NzgxXVs5NmM2XVs1NmUyXVs5MWNkXVs1ZTg2XVs2ZGFhXVs5Njc1XVs1MjM2XVs4MzZmXVs1MzgyXVs2NzA5XVs5NjUwXVs1MTZjXVs1M2Y4XSIsImRlc2NyaXB0aW9uIjoiWzU5MmFdWzY3ODFdWzk2YzZdWzU2ZTJdWzkxY2RdWzVlODZdWzZkYWFdWzk2NzVdWzUyMzZdWzgzNmZdWzUzODJdWzY3MDldWzk2NTBdWzUxNmNdWzUzZjhdKFs1OTJhXVs2NzgxXVs5NmM2XVs1NmUyXVs5MWNkXVs1ZTg2XVs2ZGFhXVs5Njc1XVs1MjM2XVs4MzZmXVs1MzgyXVs2NzA5XVs5NjUwXVs1MTZjXVs1M2Y4XSkiLCJqdGkiOiJqd3QifQ.JB3sI1gNENcVrju1WmGPWSNalpgD2yI4tECVyWAqmMQ',
+                            sessionID: '6324bed2-30cf-45f0-b9de-71be66b68a54',
+                            User-Agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'
+}
+cralwers_medical_timeout: 30
+
+cralwers_medical_url: 'http://bn59.s2ps.cn/webroot/decision/view/report?_=1675323963725&__boxModel__=true&op=fr_write&cmd=read_w_content&reportIndex=0&browserWidth=1656&iid=0.04967384392519203&__cutpage__=&pn=1&__webpage__=true&_paperWidth=1656&_paperHeight=323&__fit__=false'
+
+mysql_host: localhost
+mysql_user: root
+mysql_password: 123
+cralwer_campus_start_urls:
+  - 'https://jxjy.imu.edu.cn/tzgg.htm'
+  - 'https://jxjy.imu.edu.cn/tzgg/1.htm'
+  - 'https://jxjy.imu.edu.cn/tzgg/2.htm'
+  - 'https://jxjy.imu.edu.cn/tzgg/3.htm'
+
+proxy_url: https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc
+
+output_data_dir: output-data
