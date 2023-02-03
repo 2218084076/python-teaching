@@ -1,13 +1,18 @@
-"""cralwers proxy"""
+"""
+cralwers proxy
+
+author：linbo.wang
+language: python
+本实例使用requests库，静态请求代理网站，抓取页面中代理列表
+"""
 import json
 from typing import List
 
 import requests
 
-from cralwers.cralwers_info import write_to_file
+from cralwers.config import settings
+from cralwers.utils.files import write_to_file
 
-
-# from lxml import etree
 
 def get_link(url: str):
     """get"""
@@ -31,8 +36,6 @@ def parse_html(response) -> List[dict]:
 
 
 if __name__ == '__main__':
-    res = get_link('https://proxylist.geonode.com/'
-                   'api/proxy-list?limit=500&page=1&'
-                   'sort_by=lastChecked&sort_type=desc')
+    res = get_link(settings.PROXY_URL)
     info = parse_html(res)
     write_to_file(info, 'proxy-ip')

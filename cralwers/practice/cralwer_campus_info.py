@@ -2,6 +2,9 @@
 """
 cralwer campus information
 
+author：linbo.wang
+language: python
+
 本示例实现抓取某大学公告板块的新闻内容及标题，时间等字段，
 并将其通过简单的mysql链接工具写入mysql数据库中
 """
@@ -18,18 +21,15 @@ from bs4 import BeautifulSoup
 from lxml.etree import Element  # pylint: disable=no-name-in-module
 from requests.models import Response
 
-start_urls = [
-    'https://jxjy.imu.edu.cn/tzgg.htm',
-    'https://jxjy.imu.edu.cn/tzgg/1.htm',
-    'https://jxjy.imu.edu.cn/tzgg/2.htm',
-    'https://jxjy.imu.edu.cn/tzgg/3.htm'
-]
+from cralwers.config import settings
+
+start_urls = settings.CRALWER_CAMPUS_START_URLS
 TABLE_NAME = 'test'
 
 connection = pymysql.connect(
-    host='localhost',
-    user='root',
-    password='123qweasd',
+    host=settings.MYSQL_HOST,
+    user=settings.MYSQL_USER,
+    password=settings.MYSQL_PASSWORD,
     database='test',
     cursorclass=pymysql.cursors.DictCursor
 )

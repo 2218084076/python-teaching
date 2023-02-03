@@ -1,5 +1,7 @@
 """get company"""
-from cralwers.cralwers_info import init_browser, parse_page, write_to_file
+from cralwers.practice.cralwers_info import parse_page
+from cralwers.utils.browser import init_browser
+from cralwers.utils.files import write_to_file
 
 if __name__ == '__main__':
     browser = init_browser(headless=False)
