@@ -3,8 +3,8 @@ browser
 """
 import time
 
-from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 
 def init_browser(
