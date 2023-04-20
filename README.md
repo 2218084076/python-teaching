@@ -18,11 +18,15 @@ This is a python learning route teaching project
     - python 语言环境
     - IDE 的选择使用
     - 虚拟环境使用
+
+---
+
 - python 基础知识
     - [python基础数据类型](docs/基本数据类型.md)
     - [python条件循环语句](docs/条件循环语句.md)
     - [def函数使用](docs/def函数教学.md)
 
+---
 
 - [爬虫教学](docs/爬虫教学.md)
     - [request教学](docs/requests_cralwers.md)

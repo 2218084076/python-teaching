@@ -2,7 +2,7 @@
 
 ## 开发环境搭建
 
-本项目使用 python3.10/3.11。具体版本的python环境可以在 [官网](https://www.python.org/downloads/) 自行下载。
+本项目使用 python3.10/3.11。具体版本的 python 环境可以在 [官网](https://www.python.org/downloads/) 自行下载安装。
 
 ## IDE使用
 
@@ -29,13 +29,15 @@ pip install -U poetry
 
 poetry 的详细命令可以到其 [官方](https://python-poetry.org/) 查看
 
-## git 使用
+- 本地部署时使用命令进入项目依赖环境
 
-> Git是一个开源的项目管理平台，它可以帮助团队协作开发，管理代码版本和跟踪代码变化。
-> 在软件开发中，Git被广泛使用，特别是在开源项目和大型项目中。
+```bash
+# 在项目目录下安装项目所需依赖
+poetry install
+# 安装完成后进进入依赖虚拟环境
+poetry shell
+```
 
-为了方便大家理解，建议在使用命令行来操作 git
+若由于网络等因素导致 `poetry install` 过程失败，可以先进入 `poetry shell` 手动使用 `pip install [name]` 安装
 
-- gitbash 安装 （git 命令行工具）
-
-
+随后在 ide 中设置本地语言环境配置

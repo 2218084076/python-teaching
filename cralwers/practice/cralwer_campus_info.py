@@ -2,11 +2,11 @@
 """
 cralwer campus information
 
-author：linbo.wang
+author：Terry Linbo
 language: python
 
 本示例实现抓取某大学公告板块的新闻内容及标题，时间等字段，
-并将其通过简单的mysql链接工具写入mysql数据库中
+并将其通过简单的 mysql 链接工具写入 mysql 数据库中
 """
 import re
 import time
@@ -26,6 +26,7 @@ from cralwers.config import settings
 start_urls = settings.CRALWER_CAMPUS_START_URLS
 TABLE_NAME = 'test'
 
+# 在程序开发时，尽量将数据库等敏感信息放在环境变量中动态配置
 connection = pymysql.connect(
     host=settings.MYSQL_HOST,
     user=settings.MYSQL_USER,
