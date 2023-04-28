@@ -6,29 +6,28 @@
 
 This is a python learning route teaching project
 
-## 受众目标：
+## 受众目标
 
 - python 初学者
 
 ---
 
-## 主要包含以下主题：
+## 主要包含以下主题
 
 - [开发前准备](docs/preparation.md)
-    - python 语言环境
-    - IDE 的选择使用
-    - 虚拟环境使用
+  - python 语言环境
+  - IDE 的选择使用
+  - 虚拟环境使用
 
 ---
 
 - python 基础知识
-    - [python基础数据类型](docs/基本数据类型.md)
-    - [python条件循环语句](docs/条件循环语句.md)
-    - [def函数使用](docs/def函数教学.md)
+  - [python 基础数据类型](docs/基本数据类型.md)
+  - [python 条件循环语句](docs/条件循环语句.md)
+  - [def 函数使用](docs/def函数教学.md)
 
 ---
 
 - [爬虫教学](docs/爬虫教学.md)
-    - [request教学](docs/requests_cralwers.md)
-    - [selenium教学](docs/selenium_cralwers.md)
-    - [爬虫框架scrapy](docs/scrapy_cralwers.md)
+  - [scrapy](docs/scrapy_cralwers.md)
+  - [selenium](docs/selenium_cralwers.md)
